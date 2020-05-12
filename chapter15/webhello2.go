@@ -19,7 +19,6 @@ func myHandler(w http.ResponseWriter, req *http.Request) {
 		fmt.Fprint(w, "Error")
 		return
 	}
-
 	switch strs[0] {
 	case "hello":
 		fmt.Fprintf(w, "hello %s", strs[1])
